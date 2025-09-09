@@ -33,7 +33,7 @@ def query_documents(question: str):
     return response["messages"][-1].content
 
 @app.get("/rag_agent/stream")
-def query_documents(question: str):
+def query_documents_stream(question: str):
     input_message = question
     config = {"configurable": {"thread_id": "def234"}}
 
